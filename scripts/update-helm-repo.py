@@ -1,5 +1,9 @@
+from dotenv import load_dotenv
+import os
 import sys
 import subprocess
+
+load_dotenv()
 
 """
 This is the python translation of the shell script that clones a Helm chart repository and updates the deployment file with the current build number.
