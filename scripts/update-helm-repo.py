@@ -5,7 +5,7 @@ import subprocess
 This is the python translation of the shell script that clones a Helm chart repository and updates the deployment file with the current build number.
 
 Usage:
-    python clone_repo.py <k8s_deployment> <repository_url> [destination_directory]
+    py clone_repo.py <k8s_deployment> <repository_url> [destination_directory]
 """
 
 arguments = sys.argv[1:]
@@ -25,7 +25,7 @@ def clone_repo(repo_url, dest_dir=None):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python clone_repo.py <k8s_deployment> <repository_url> [destination_directory]")
+        print("Usage: py clone_repo.py <k8s_deployment> <repository_url> [destination_directory]")
         sys.exit(1)
     
     
